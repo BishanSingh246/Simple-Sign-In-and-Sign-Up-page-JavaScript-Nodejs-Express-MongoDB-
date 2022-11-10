@@ -1,0 +1,25 @@
+<form method="post" id="update_user">
+    <div class="update-user">
+        <div class="form-group">
+            <label for="fname" class="text-light">First Name</label>
+            <input type="hidden" name="id" value="<%= user._id%>">
+            <input type="text" name="fname" value="<%= user.fname%>" id="" placeholder="Mark">
+        </div>
+        <div class="form-group">
+            <label for="lname" class="text-light">Last Name</label>
+            <input type="text" name="lname" value="<%= user.lname%>" placeholder="Stoenis" id="">
+        </div>
+        <div class="form-group">
+            <label for="email" class="text-light">Email</label>
+            <input type="email" name="email" value="<%= user.email%>"  placeholder="example@gmail.com" id="">
+        </div>
+        <div class="form-group">
+            <label for="password" class="text-light">Update your Password</label>
+            <input type="hidden" name="id" value="<%= user._id%>">
+            <input type="password" name="password" value="<%= user.password %>" placeholder="eg = 123abc" id="">
+        </div>
+        <div class="form-group">
+            <button  type="submit" class="btn btn-update text-dark update">Update</button>
+        </div>
+    </div>
+</form>

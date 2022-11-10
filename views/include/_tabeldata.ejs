@@ -1,0 +1,31 @@
+<% for(var i=0; i < users.length; i++){ %>
+
+    <!-- tabel row -->
+    <tr>
+        <!-- tabel data -->
+        <td>
+            <%= i+1 %>
+        </td>
+        <td>
+            <%= users[i].fname %>
+        </td>
+        <td>
+            <%= users[i].lname %>
+        </td>
+        <td>
+            <%= users[i].email %>
+        </td>
+        <td>
+            <!-- anchor tag -->
+            <a href="/update-user?id=<%= users[i]._id %>" class="btn-home border-shadow update">
+                <span class="text-gradient"><i class="fa-solid fa-pencil"></i></span>
+            </a>
+            <a href="" class="btn-home border-shadow delete" data-id="<%= users[i]._id %>">
+                <span class="text-gradient"><i class="fa-solid fa-trash"></i></span>
+            </a>
+            <!-- anchor tag-->
+        </td>
+    </tr>
+    <!-- tabel row -->
+
+    <% } %>

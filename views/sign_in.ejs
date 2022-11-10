@@ -1,0 +1,48 @@
+<!-- Inclede Header -->
+<%-include('include/_header')%>
+    <!-- /Inclede Header -->
+
+    <!-- Main Site -->
+
+    <main id="site-main-signin">
+        <div class="container-signin">
+            <div class="head-signin">
+                <h1>Sign In</h1>
+            </div>
+
+            <div class="signin">
+                <form action="/sign_in" method="post">
+
+                    <div class="box-signin">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email" placeholder="Enter your Email"  name="semail">
+                    </div>
+                    <div class="box-signin">
+                        <i class="fa fa-key"></i>
+                        <input type="password"  id="password" placeholder="Enter your Password"  name="spassword">
+                    </div>
+                    <div>
+                        <button class="btn-signin" type="submit">Sign In
+                            <!-- <a href="" class="btn-1">Sign In</a> -->
+                        </button>
+                        <button class="btn-signin">
+                            <a href="/sign_up" class="btn-1">Sign Up</a>
+                        </button>
+                        <button class="btn-signin">
+                            <a href='/' class="btn-1">All Users</a>
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+    </main>
+    <!-- /Main Site -->
+
+
+
+
+    <!-- Include footer -->
+    <%-include('include/_footer')%>
+        <!-- /Include footer -->

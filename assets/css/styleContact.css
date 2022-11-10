@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    background-image: url(../static/img/bgHome3.jpg);
+}
+
+#navbar li a {
+    color: black 
+    /* font-size:40px */
+}
+
+.container {
+    min-height: 88vh;
+
+}
+
+h1 {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.myForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.myInput {
+    width: 40%;
+    padding: 9px;
+    margin: 8px;
+    font-size: 16px;
+    border-radius: 12px;
+    outline: none;
+}
+.btn {
+    cursor: pointer;
+    outline: none;
+    padding: 6px;
+    /* margin: 2px 26px; */
+    margin: 26px;
+    border-radius: 10px;
+    border: 2px solid rgba(18, 255, 10, 0.745);
+    background: none;
+    color: wheat;
+    padding: 8px 16px;
+
+}
+
+.btn:hover{
+    color:  black;
+}

@@ -1,0 +1,38 @@
+  <!-- Inclede Header -->
+  <%-include('include/_header')%>
+  <!-- /Inclede Header -->
+
+  <!-- Main Site -->
+
+  <main id="site-main-home">
+    <div class="container-home">
+      <div class="head-home">
+        <h1>All Users</h1>
+      </div>
+      <form action="/" method="post" class="tabel-home-1">
+        <table id="tabel-home">
+          <thead class="thead-dark">
+            <!-- tabel row -->
+            <tr>
+              <!-- tabel head -->
+              <th>ID</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+              <th>Action</th>
+              <!-- tabel head -->
+            </tr>
+            <!-- tabel row -->
+          </thead>
+          <tbody>
+            <%-include('include/_tabeldata')%>
+          </tbody>
+        </table>
+      </form>
+    </div>
+  </main>
+  <!-- /Main Site -->
+
+  <!-- Include footer -->
+  <%-include('include/_footer')%>
+    <!-- /Include footer -->
