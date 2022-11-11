@@ -14,7 +14,7 @@ mongoose.connect("mongodb://localhost:27017/users").then(()=>{
 // const connectdb = async () => {
 //   try {
 //     const connect = await mongoose.connect(
-//       "mongodb+srv://admin:admin123@cluster0.sv9wrsc.mongodb.net/users?retryWrites=true&w=majority"
+//       ""
 //     );
 //     console.log(`MongoDB Connected :${connect.connection.host}`);
 //   } catch (error) {
